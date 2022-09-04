@@ -7,6 +7,7 @@ namespace CodeBase.Infrastructure
     {
         public static IInputService InputService;
 
+        //конструктор класса
         public Game()
         {
             RegisterInputService();

@@ -9,6 +9,7 @@ namespace CodeBase.Infrastructure
 
         private void Awake()
         {
+            //точка входа в игру
             _game = new Game();
 
             DontDestroyOnLoad(this);
