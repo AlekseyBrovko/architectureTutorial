@@ -14,7 +14,10 @@ namespace CodeBase.Infrastructure
         //конструктор класса
         public GameStateMachine()
         {
-            _states = new Dictionary<Type, IState>();
+            _states = new Dictionary<Type, IState>()
+            {
+                [typeof(BootstrapState)] = new BootstrapState(this)
+            };
         }
 
         //дженерик
